@@ -65,6 +65,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/mt6879-common/proprietary/vendor/etc/init.insmod.mt6879.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/init.insmod.mt6879.cfg \
     vendor/motorola/mt6879-common/proprietary/vendor/etc/init/android.hardware.drm@1.4-service.widevine.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm@1.4-service.widevine.rc \
     vendor/motorola/mt6879-common/proprietary/vendor/etc/init/android.hardware.gnss-service.mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gnss-service.mediatek.rc \
+    vendor/motorola/mt6879-common/proprietary/vendor/etc/init/android.hardware.media.c2@1.2-mediatek-64b.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.media.c2@1.2-mediatek-64b.rc \
     vendor/motorola/mt6879-common/proprietary/vendor/etc/init/android.hardware.neuralnetworks-shim-service-mtk.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.neuralnetworks-shim-service-mtk.rc \
     vendor/motorola/mt6879-common/proprietary/vendor/etc/init/android.hardware.security.keymint-service.trustonic.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.security.keymint-service.trustonic.rc \
     vendor/motorola/mt6879-common/proprietary/vendor/etc/init/hw/init.mmi.backup.trustlet.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.mmi.backup.trustlet.rc \
@@ -103,6 +104,8 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/mt6879-common/proprietary/vendor/etc/mtk_platform_codecs_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mtk_platform_codecs_config.xml \
     vendor/motorola/mt6879-common/proprietary/vendor/etc/nnapi_powerhal.json:$(TARGET_COPY_OUT_VENDOR)/etc/nnapi_powerhal.json \
     vendor/motorola/mt6879-common/proprietary/vendor/etc/permissions/com.mediatek.hardware.vow_dsp.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.mediatek.hardware.vow_dsp.xml \
+    vendor/motorola/mt6879-common/proprietary/vendor/etc/seccomp_policy/android.hardware.media.c2@1.2-extended-seccomp-policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/android.hardware.media.c2@1.2-extended-seccomp-policy \
+    vendor/motorola/mt6879-common/proprietary/vendor/etc/seccomp_policy/android.hardware.media.c2@1.2-mediatek-seccomp-policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/android.hardware.media.c2@1.2-mediatek-seccomp-policy \
     vendor/motorola/mt6879-common/proprietary/vendor/etc/slp_conf:$(TARGET_COPY_OUT_VENDOR)/etc/slp_conf \
     vendor/motorola/mt6879-common/proprietary/vendor/etc/smartpa_param/AW_DSP.bin:$(TARGET_COPY_OUT_VENDOR)/etc/smartpa_param/AW_DSP.bin \
     vendor/motorola/mt6879-common/proprietary/vendor/etc/smsdbvisitor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/smsdbvisitor.xml \
@@ -483,6 +486,7 @@ PRODUCT_PACKAGES += \
     manifest_apuware_hmp.xml \
     manifest_apuware_utils.xml \
     manifest_hwcomposer.xml \
+    manifest_media_c2_V1_2_default.xml \
     vendor.mediatek.hardware.neuropilot.agent@1.0-service.xml \
     bip_ap \
     ccci_mdinit \
@@ -491,6 +495,7 @@ PRODUCT_PACKAGES += \
     hardware_revisions \
     android.hardware.drm@1.4-service.widevine \
     android.hardware.gnss-service.mediatek \
+    android.hardware.media.c2@1.2-mediatek-64b \
     android.hardware.neuralnetworks-shim-service-mtk \
     android.hardware.security.keymint-service.trustonic \
     android.hardware.graphics.allocator@4.0-service-mediatek.mt6879 \
